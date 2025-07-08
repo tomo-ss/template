@@ -32,10 +32,10 @@ table {
 #top {
 	width: 780px;
 	margin: 30px auto;
+	border: 1px solid #333;
 }
 
 #header {
-	border: 1px solid #333;
 	width: 100%;
 	height: 80px;
 	background-color: black;
