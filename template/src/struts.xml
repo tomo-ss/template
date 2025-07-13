@@ -1,12 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE struts PUBLIC
+ <!DOCTYPE struts PUBLIC
 "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
-"http://struts.apache.org/dtds/struts-2.3.dtd">
-
+ "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
 	<constant name="struts.devMode" value="true" />
+
 	<package name="com.diworksdev.template.action" extends="struts-default">
+
+		<action name="HomeAction" class="com.diworksdev.template.action.HomeAction"
+			method="execute">
+			<result name="success">login.jsp</result>
+		</action>
+
+		<action name="LoginAction" class="com.diworksdev.template.action.LoginAction"
+			method="execute">
+			<result name="success">buyItem.jsp</result>
+			<result name="error">home.jsp</result>
+		</action>
+
 	</package>
 </struts>
-
