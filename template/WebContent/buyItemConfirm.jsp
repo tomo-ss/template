@@ -74,6 +74,8 @@ table {
 						<td>値段</td>
 						<td><s:property value="session.buyItem_price" /> <span>円</span>
 						</td>
+					</tr>
+					<tr>
 						<td>購入個数</td>
 						<td><s:property value="session.stock" /> <span>個</span></td>
 					</tr>
